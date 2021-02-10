@@ -1,0 +1,14 @@
+.title-button{
+    background-color: white;
+    border: white;
+    color: rgb(22, 97, 184);
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    margin-left: -10px;
+
+}
+
