@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Drinks } from 'src/shared/models/drinkModel';
+import { FilterData } from 'src/shared/models/filterModel';
+import Swal from 'sweetalert2';
 import { CocktailService } from '../../services/cocktail.service';
 
 @Component({
@@ -25,7 +27,8 @@ export class DashboardComponent implements OnInit {
     console.log(drinkId);
   }
 
-  filterType(filterType: string) {
-    this.loadDrinks(filterType, 'margarita');
+  getFilterData(filterData: FilterData) {
+    console.log(filterData)
+    this.loadDrinks(filterData.filterType, filterData.filterValue);
   }
 }

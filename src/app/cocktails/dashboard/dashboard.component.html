@@ -1,5 +1,5 @@
 <div class="container">
-    <app-header (filterType)="filterType($event)"></app-header>
+    <app-header (filterData)="getFilterData($event)"></app-header>
     <div class="card-deck row">
         <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let drink of drinks">
             <div class="card">
